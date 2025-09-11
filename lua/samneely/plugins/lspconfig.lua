@@ -215,10 +215,15 @@ return {
 					},
 				},
 				pylint = {},
-				rubocop = {},
-				-- ruby_lsp = {},
+				rubocop = {
+					mason = false,
+					cmd = { "bundle", "exec", "rubocop", "--lsp" },
+				},
+				ruby_lsp = {
+					mason = false,
+					cmd = { vim.fn.expand("~/.asdf/shims/ruby-lsp") },
+				},
 				shellcheck = {},
-				solargraph = {},
 			}
 
 			-- Ensure the servers and tools above are installed

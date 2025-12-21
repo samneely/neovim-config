@@ -199,6 +199,17 @@ return {
 				--
 
 				buildifier = {},
+        gopls = {
+          settings = {
+            gopls = {
+              analyses = {
+                unusedparams = true,
+              },
+              staticcheck = true,
+              gofumpt = true,
+            },
+          }
+        },
 				hadolint = {},
 				lua_ls = {
 					-- cmd = { ... },

@@ -1,5 +1,5 @@
 return {
   'tpope/vim-fugitive',
   dependencies = { 'tpope/vim-rhubarb' },
-  cmd = { 'G', 'Git' },
+  cmd = { 'G', 'Git', 'Gdiffsplit', 'Gread', 'Gwrite', 'Ggrep', 'GMove', 'GDelete', 'GBrowse' },
 }
